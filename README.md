@@ -22,7 +22,7 @@
 ### Python版本的NNG:  
 *前提条件:安装了Python9+*  
 1.克隆存储库  
-2.打开src文件夹中的python_version文件夹中的src文件夹  
+2.打开src_py文件夹  
 3.运行**main.py**  
 **注意，您如果需要拷贝Python版本，请拷贝整个src文件夹和其中的文件。**  
   
