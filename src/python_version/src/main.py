@@ -29,10 +29,7 @@ import json
 
 # 不要改啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 _version = 0.1
-application_title = "Netease Minecraft Nickname Random"
-application_author = "wangyupu"
 application_start_time = time.time()
-print(f"{application_title} {_version}\nAuthor:{application_author}")
 # 获取目录
 path = __file__
 path = path[:len(path)-7]
@@ -237,9 +234,10 @@ def name2pinyin_rev(name):
             res = item+res
     return res
 
-bad_words = "sabi/sb/shabi/dafeiji/sese/chuo/http/https/www/jiba/weiguang/zhilang/250/520/nima/niba/woba/woma/woshinima/nijia\
-giegie/daxiong/xiongda/zhanai/niuniu/jiji/penis/yindao/yingdao/yinhui/yinghui/dadoudou".split("/")
-bad_words_raw = "胸/寄吧/傻/傻子/傻逼".split("/")
+with open(f"{path}bad_words.json",mode="r") as file:
+    bad_words_file = json.loads(file.read())
+    bad_words = bad_words_file["words"]
+    bad_words_raw = bad_words_file["raw"]
 badreason = []
 def check_name_words_fx(pyname,name):
     signal = True
