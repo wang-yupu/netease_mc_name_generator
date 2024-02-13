@@ -1,11 +1,11 @@
 # 网易MC名称生成器 · Netease MC Name Generator · NNG
-# 快速体验 : [在线版本](https://wangyupu.com/tools/tools_netease_nickname_generator)  
+# 快速体验 : [在线版本](https://wangyupu.com/tools/tools_netease_nickname_generator)  |  [Python版本](#快速开始)
 ## 详情
 网易MC名称生成器，分为两个版本:  
 1.python版本，使用Tkinter实现GUI。功能多  
 2.在线版本，使用js实现。仅实现名称生成  
 
-## 版本特色
+## 版本差异
 | x | / | ? |
 | ---- | ---- | ---- |
 | 无功能 | 有功能 | 待实现 |
@@ -19,7 +19,15 @@
 | 高级提示 | / | ? |
 
 ## 快速开始  
-Python版本直接运行main.py，无需安装其他包。
+### Python版本的NNG:  
+*前提条件:安装了Python9+*  
+1.克隆存储库  
+2.打开src文件夹中的python_version文件夹中的src文件夹  
+3.运行**main.py**  
+**注意，您如果需要拷贝Python版本，请拷贝整个src文件夹和其中的文件。**  
+  
+### 在线版本的NNG:
+打开 [链接](https://wangyupu.com/tools/tools_netease_nickname_generator)  
 
 ## 功能详情
 ### 自定义词库/名称格式
